@@ -2,6 +2,7 @@ package com.wh2per.human_pose_estimation;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(cont, WebViewActivity.class);
+                //Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://192.168.0.88/upload/application/sk/upload.php"));
                 startActivity(intent);
                 Log.e("a","aaa");
             }

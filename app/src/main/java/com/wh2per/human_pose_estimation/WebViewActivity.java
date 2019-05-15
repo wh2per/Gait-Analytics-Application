@@ -12,7 +12,7 @@ import android.webkit.WebView;
 
 public class WebViewActivity extends AppCompatActivity {
     private WebView mWebView;
-    private String myUrl = "http://192.168.0.88/upload/application/up/upload.php/";
+    private String myUrl = "http://192.168.0.88/upload/application/sk/upload.php";
     private ValueCallback<Uri> filePathCallbackNormal;
     private ValueCallback<Uri[]> filePathCallbackLollipop;
     private final static int FILECHOOSER_NORMAL_REQ_CODE = 1;
@@ -96,6 +96,7 @@ public class WebViewActivity extends AppCompatActivity {
             } else if (requestCode == FILECHOOSER_LOLLIPOP_REQ_CODE) {
                 if (filePathCallbackLollipop == null) return ;
                 filePathCallbackLollipop.onReceiveValue(WebChromeClient.FileChooserParams.parseResult(resultCode, data));
+                Log.e("file : ", resultCode + ", "+data);
                 Log.e("Normal_LOl1 : ",""+ filePathCallbackLollipop+"");
                 filePathCallbackLollipop = null;
             }
