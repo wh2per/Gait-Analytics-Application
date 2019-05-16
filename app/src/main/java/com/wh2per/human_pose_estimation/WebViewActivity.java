@@ -12,7 +12,7 @@ import android.webkit.WebView;
 
 public class WebViewActivity extends AppCompatActivity {
     private WebView mWebView;
-    private String myUrl = "http://192.168.0.88/upload/application/sk/upload.php";
+    private String myUrl = "http://192.168.0.86/upload/application/sk/upload.php";
     private ValueCallback<Uri> filePathCallbackNormal;
     private ValueCallback<Uri[]> filePathCallbackLollipop;
     private final static int FILECHOOSER_NORMAL_REQ_CODE = 1;

@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#4adb9c</color>
+    <color name="colorPrimary_trans">#B34adb9c</color>
+    <!--<color name="colorPrimary">#85CC9F</color>-->
+    <color name="colorPrimary_ultra_light">#e2f0e7</color>
+    <color name="colorPrimary_lighter">#d7e7dd</color>
+    <color name="colorPrimary_light">#8bb79b</color>
+    <color name="colorPrimary_soft">#C8E8C7</color>
+
+    <color name="colorSecond">#49D3CC</color>
+    <color name="colorSecond_trans">#B349D3CC</color>
+    <color name="colorThird">#2A363B</color>
+
+    <color name="darkGrey">#aaaaaa</color>
+    <color name="lightGrey">#dadada</color>
+    <color name="transGrey">#B3aaaaaa</color>
+
+    <color name="colorPrimaryDark">#FFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_dark">#f6f6f6</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorBlack_light">#5e5e5e</color>
+
+    <color name="colorAccent">#4adb9c</color>
+    <color name="transparent">#00000000</color>
+
+
+    <color name="catOne">#57BB8A</color>
+    <color name="catTwo">#9ace6a</color>
+    <color name="catThree">#ffcf02</color>
+    <color name="catFour">#ff9f02</color>
+    <color name="catFive">#ff6f31</color>
 </resources>
+

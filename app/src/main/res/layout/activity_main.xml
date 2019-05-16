@@ -6,49 +6,87 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="89dp"
-        android:layout_height="46dp"
-        android:text="걸걸이"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.334" />
-
-    <Button
-        android:id="@+id/uploadButton"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="동영상 업로드"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.004"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.75" />
-
-    <Button
-        android:id="@+id/recordButton"
-        android:layout_width="104dp"
-        android:layout_height="49dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="64dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="동영상 촬영"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.734" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/walk_title3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="자세 분석 및 교정 서비스"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/my_font_family" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="@color/darkGrey"
+                android:text="당신의 건강은 언제나 소중하니까"
+                app:fontFamily="@font/my_font_family"
+                android:includeFontPadding="false"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="56dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/uploadButton"
+                android:layout_width="325dp"
+                android:layout_height="52dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/btn_hard_round_color"
+                android:includeFontPadding="false"
+                android:text="동영상 업로드"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="@font/my_font_family" />
+
+            <Button
+                android:id="@+id/recordButton"
+                android:layout_width="325dp"
+                android:layout_height="52dp"
+                android:background="@drawable/btn_hard_round"
+                android:elevation="0dp"
+                android:includeFontPadding="false"
+                android:stateListAnimator="@null"
+                android:text="동영상 촬영"
+                android:textColor="@color/darkGrey"
+                android:textSize="18sp"
+                app:fontFamily="@font/my_font_family" />
+        </LinearLayout>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
