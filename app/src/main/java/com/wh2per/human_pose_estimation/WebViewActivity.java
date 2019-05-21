@@ -18,10 +18,15 @@ public class WebViewActivity extends AppCompatActivity {
     private final static int FILECHOOSER_NORMAL_REQ_CODE = 1;
     private final static int FILECHOOSER_LOLLIPOP_REQ_CODE = 2;
 
+    AdmobController aac;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
+
+        aac = new AdmobController(this);
+
 
         // 웹뷰 셋팅팅
         mWebView = (WebView) findViewById(R.id.webView);
@@ -82,6 +87,12 @@ public class WebViewActivity extends AppCompatActivity {
             }
         }
         return super.onKeyDown(keyCode, event);
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        aac.runVideoAd();
     }
 
     @Override

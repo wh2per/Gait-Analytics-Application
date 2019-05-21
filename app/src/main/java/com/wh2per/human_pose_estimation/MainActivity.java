@@ -37,8 +37,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
 
-
-
         uploadButton = findViewById(R.id.uploadButton);
         uploadButton.setOnClickListener(new Button.OnClickListener() {
             @Override

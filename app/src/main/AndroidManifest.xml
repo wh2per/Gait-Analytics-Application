@@ -28,6 +28,9 @@
         <activity android:name=".WebViewActivity"
             android:configChanges="orientation|keyboardHidden|screenSize">
         </activity>
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8600536608045213~4285578189"/>        <!-- ca-app-pub-8600536608045213~4285578189 -->
     </application>
 
 </manifest>
