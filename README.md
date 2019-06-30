@@ -37,15 +37,15 @@
    <img src="image/result.JPG" width="200" height="350">
    
 ## 5. Function Description
-+ ### App, Web - Client
++ ### App, Web - Client [[Project Link]](https://github.com/wh2per/Gait-Analytics-Application)
   * 사용자는 스마트폰을 이용해 걸음걸이를 촬영합니다.
   * 분석을 원하는 동영상을 선택하여 서버에 업로드 합니다.
   * 결과 화면을 웹과 앱으로 동시에 받아 볼 수 있습니다.
-+ ### Web - Server
++ ### Web - Server [[Project Link]](https://github.com/wh2per/Gait-Analytics-Server)
   * 사용자가 업로드한 동영상을 영상 분석 프로그램으로 분석합니다.
   * Human Pose Estimation 이 적용된 영상을 결과화면에 같이 출력합니다.
   * 분석 결과를 웹으로 출력합니다.
-+ ### Analysis
++ ### Analysis [[Project Link]](https://github.com/wh2per/Gait-Analytics-Image-Processing)
   * cnn을 이용한 Human Pose Estimation을 진행합니다.
   * COCO model을 사용하여 사용자의 뼈대를 추출하면 뼈대의 벡터를 이용해 각을 연산합니다.
   * 연산된 각도를 통해 구부정한 자세를 찾아냅니다.
